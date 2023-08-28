@@ -16,9 +16,9 @@ struct ProductCell: View {
         HStack(spacing: 20){
             KFImage(URL(string: munch.image))
                 .resizable()
-                .scaledToFit()
-                .frame(width: 70)
-                .cornerRadius(10)
+                .scaledToFill()
+                .frame(width: 130, height: 130)
+                .cornerRadius(12)
             
             VStack(alignment: .leading, spacing: 10){
                 Text(munch.placeName)
