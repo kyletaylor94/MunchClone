@@ -101,6 +101,7 @@
 /* Begin PBXFileReference section */
 		C018D7452A8C9CFA00D2D706 /* MyFavouriteView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyFavouriteView.swift; sourceTree = "<group>"; };
 		C02184202A5AB98600F7A40F /* DescriptionViewComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DescriptionViewComponent.swift; sourceTree = "<group>"; };
+		C04326062A9DEF0D00B3256C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		C04AC7102A56B007006E0E59 /* MunchHeaderComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MunchHeaderComponent.swift; sourceTree = "<group>"; };
 		C04AC7122A56B102006E0E59 /* MuncheaderScroll.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MuncheaderScroll.swift; sourceTree = "<group>"; };
 		C04AC7142A56B38E006E0E59 /* HomeTitleComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTitleComponent.swift; sourceTree = "<group>"; };
@@ -295,6 +296,7 @@
 		C09024D62A5550FD00CDDD96 /* MunchClone */ = {
 			isa = PBXGroup;
 			children = (
+				C04326062A9DEF0D00B3256C /* Info.plist */,
 				C0D26B9F2A852022001DE00C /* GoogleService-Info.plist */,
 				C09556D52A5C63C20027897A /* ViewModel */,
 				C09024EA2A5554D400CDDD96 /* Components */,
@@ -708,6 +710,10 @@
 				DEVELOPMENT_TEAM = KB835FKYB4;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = MunchClone/Info.plist;
+				INFOPLIST_KEY_NSLocationAlwaysUsageDescription = "App needs your location";
+				INFOPLIST_KEY_NSLocationUsageDescription = "App needs your location";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "The app needs your location to show u munches";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -737,6 +743,10 @@
 				DEVELOPMENT_TEAM = KB835FKYB4;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = MunchClone/Info.plist;
+				INFOPLIST_KEY_NSLocationAlwaysUsageDescription = "App needs your location";
+				INFOPLIST_KEY_NSLocationUsageDescription = "App needs your location";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "The app needs your location to show u munches";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;

@@ -41,7 +41,7 @@ class ApplePayViewModel: NSObject {
         
         let paymentRequest = PKPaymentRequest()
         paymentRequest.paymentSummaryItems = paymentSummaryItems
-        paymentRequest.merchantIdentifier = "merchant.io.designcode.sweatershopapp"
+        paymentRequest.merchantIdentifier = "com.csabaturdesan.MunchClone"
         paymentRequest.merchantCapabilities = .threeDSecure
         paymentRequest.countryCode = "HU"
         paymentRequest.currencyCode = "HUF"
