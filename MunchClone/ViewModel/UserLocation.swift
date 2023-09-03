@@ -25,6 +25,8 @@ class UserLocation: NSObject,ObservableObject, CLLocationManagerDelegate{
         manager.requestWhenInUseAuthorization()
         manager.requestAlwaysAuthorization()
         manager.requestLocation()
+        manager.desiredAccuracy = kCLLocationAccuracyBest
+        manager.startUpdatingLocation()
     }
     
     func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
@@ -33,6 +35,8 @@ class UserLocation: NSObject,ObservableObject, CLLocationManagerDelegate{
             return
         }
         userLocation = location
+        manager.stopUpdatingLocation()
+        
         
         if locations.first != nil {
             print("location :: \(userLocation)")

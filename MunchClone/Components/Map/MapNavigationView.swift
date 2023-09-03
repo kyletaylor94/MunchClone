@@ -10,6 +10,7 @@ import Kingfisher
 
 struct MapNavigationView: View {
     var munch: MunchModel = munchExample[3]
+    @State private var isTapped: Bool = false
     
     var body: some View {
         HStack{
@@ -36,15 +37,22 @@ struct MapNavigationView: View {
             Spacer()
             
             Button(action: {
-                //navigate to location
-                //deep into the waze or google maps
+                isTapped.toggle()
+                
             }, label: {
                 Image(systemName: "arrow.up.right.square.fill")
                     .foregroundColor(.green)
                     .font(.system(size: 50))
+                
             })
+            .sheet(isPresented: $isTapped, content: {
+                MapChoiceView(munch: munch)
+            })
+            
         }
         .padding()
+        
+        
     }
 }
 

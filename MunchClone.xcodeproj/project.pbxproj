@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		C018D7462A8C9CFA00D2D706 /* MyFavouriteView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C018D7452A8C9CFA00D2D706 /* MyFavouriteView.swift */; };
 		C02184212A5AB98600F7A40F /* DescriptionViewComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = C02184202A5AB98600F7A40F /* DescriptionViewComponent.swift */; };
+		C02306832AA44E5E002A5264 /* AppleNavigationPolylineView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C02306822AA44E5E002A5264 /* AppleNavigationPolylineView.swift */; };
+		C02306852AA457AF002A5264 /* WazeNavigationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C02306842AA457AF002A5264 /* WazeNavigationViewModel.swift */; };
 		C04AC7112A56B007006E0E59 /* MunchHeaderComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = C04AC7102A56B007006E0E59 /* MunchHeaderComponent.swift */; };
 		C04AC7132A56B102006E0E59 /* MuncheaderScroll.swift in Sources */ = {isa = PBXBuildFile; fileRef = C04AC7122A56B102006E0E59 /* MuncheaderScroll.swift */; };
 		C04AC7152A56B38E006E0E59 /* HomeTitleComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = C04AC7142A56B38E006E0E59 /* HomeTitleComponent.swift */; };
@@ -18,6 +20,8 @@
 		C05EC6AE2A8619CA00189C68 /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = C05EC6AD2A8619CA00189C68 /* CustomTextField.swift */; };
 		C05EC6B02A861C8E00189C68 /* Login.swift in Sources */ = {isa = PBXBuildFile; fileRef = C05EC6AF2A861C8E00189C68 /* Login.swift */; };
 		C05EC6B22A8760E300189C68 /* CustomBackGroundAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = C05EC6B12A8760E300189C68 /* CustomBackGroundAnimation.swift */; };
+		C06827BE2AA07E1100E14DDB /* AppleMapNavigationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C06827BD2AA07E1100E14DDB /* AppleMapNavigationViewModel.swift */; };
+		C06827C02AA0899100E14DDB /* Trip.swift in Sources */ = {isa = PBXBuildFile; fileRef = C06827BF2AA0899100E14DDB /* Trip.swift */; };
 		C0692B162A83CFB700F764C1 /* AuthViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0692B152A83CFB700F764C1 /* AuthViewModel.swift */; };
 		C0692B202A83D35A00F764C1 /* EmptyFavouriteView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0692B1F2A83D35A00F764C1 /* EmptyFavouriteView.swift */; };
 		C0692B222A83D6B400F764C1 /* HelpAndInformationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0692B212A83D6B400F764C1 /* HelpAndInformationView.swift */; };
@@ -86,6 +90,7 @@
 		C0DFCB712A82C2A100BDFA4B /* MapNavigationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0DFCB702A82C2A100BDFA4B /* MapNavigationView.swift */; };
 		C0F23C9C2A93829100B2150E /* MunchTesting.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0F23C9B2A93829100B2150E /* MunchTesting.swift */; };
 		C0F23CA32A938DC700B2150E /* FavouriteMunchCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0F23CA22A938DC700B2150E /* FavouriteMunchCell.swift */; };
+		C0F7104B2AA0EB74007719D7 /* MapChoiceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0F7104A2AA0EB74007719D7 /* MapChoiceView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -101,6 +106,8 @@
 /* Begin PBXFileReference section */
 		C018D7452A8C9CFA00D2D706 /* MyFavouriteView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyFavouriteView.swift; sourceTree = "<group>"; };
 		C02184202A5AB98600F7A40F /* DescriptionViewComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DescriptionViewComponent.swift; sourceTree = "<group>"; };
+		C02306822AA44E5E002A5264 /* AppleNavigationPolylineView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppleNavigationPolylineView.swift; sourceTree = "<group>"; };
+		C02306842AA457AF002A5264 /* WazeNavigationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WazeNavigationViewModel.swift; sourceTree = "<group>"; };
 		C04326062A9DEF0D00B3256C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		C04AC7102A56B007006E0E59 /* MunchHeaderComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MunchHeaderComponent.swift; sourceTree = "<group>"; };
 		C04AC7122A56B102006E0E59 /* MuncheaderScroll.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MuncheaderScroll.swift; sourceTree = "<group>"; };
@@ -111,6 +118,8 @@
 		C05EC6AD2A8619CA00189C68 /* CustomTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextField.swift; sourceTree = "<group>"; };
 		C05EC6AF2A861C8E00189C68 /* Login.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Login.swift; sourceTree = "<group>"; };
 		C05EC6B12A8760E300189C68 /* CustomBackGroundAnimation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomBackGroundAnimation.swift; sourceTree = "<group>"; };
+		C06827BD2AA07E1100E14DDB /* AppleMapNavigationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppleMapNavigationViewModel.swift; sourceTree = "<group>"; };
+		C06827BF2AA0899100E14DDB /* Trip.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Trip.swift; sourceTree = "<group>"; };
 		C0692B152A83CFB700F764C1 /* AuthViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthViewModel.swift; sourceTree = "<group>"; };
 		C0692B1F2A83D35A00F764C1 /* EmptyFavouriteView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmptyFavouriteView.swift; sourceTree = "<group>"; };
 		C0692B212A83D6B400F764C1 /* HelpAndInformationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelpAndInformationView.swift; sourceTree = "<group>"; };
@@ -152,6 +161,7 @@
 		C0F23C992A93829100B2150E /* MunchTesting.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MunchTesting.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C0F23C9B2A93829100B2150E /* MunchTesting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MunchTesting.swift; sourceTree = "<group>"; };
 		C0F23CA22A938DC700B2150E /* FavouriteMunchCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavouriteMunchCell.swift; sourceTree = "<group>"; };
+		C0F7104A2AA0EB74007719D7 /* MapChoiceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapChoiceView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -248,6 +258,8 @@
 				C0A04F102A607E0400B0224C /* MapCell.swift */,
 				C0DFCB702A82C2A100BDFA4B /* MapNavigationView.swift */,
 				C0A7340F2A55994E009963E7 /* CustomMappin.swift */,
+				C0F7104A2AA0EB74007719D7 /* MapChoiceView.swift */,
+				C02306822AA44E5E002A5264 /* AppleNavigationPolylineView.swift */,
 			);
 			path = Map;
 			sourceTree = "<group>";
@@ -336,6 +348,7 @@
 			children = (
 				C0A734082A556993009963E7 /* MunchModel.swift */,
 				C088EBEA2A92936800B5AAC4 /* Alerts.swift */,
+				C06827BF2AA0899100E14DDB /* Trip.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -360,6 +373,8 @@
 				C0692B152A83CFB700F764C1 /* AuthViewModel.swift */,
 				C08441C52A8E959000DE290A /* UserLocation.swift */,
 				C08F27852A910775007ECE7B /* ApplePayViewModel.swift */,
+				C06827BD2AA07E1100E14DDB /* AppleMapNavigationViewModel.swift */,
+				C02306842AA457AF002A5264 /* WazeNavigationViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -524,6 +539,7 @@
 				C08F27862A910775007ECE7B /* ApplePayViewModel.swift in Sources */,
 				C0A7340E2A55738C009963E7 /* EmptyCartComponent.swift in Sources */,
 				C04AC7132A56B102006E0E59 /* MuncheaderScroll.swift in Sources */,
+				C02306832AA44E5E002A5264 /* AppleNavigationPolylineView.swift in Sources */,
 				C0A734072A556943009963E7 /* HomeViewComponentCell.swift in Sources */,
 				C05EC6B22A8760E300189C68 /* CustomBackGroundAnimation.swift in Sources */,
 				C018D7462A8C9CFA00D2D706 /* MyFavouriteView.swift in Sources */,
@@ -531,6 +547,7 @@
 				C08F27842A91062B007ECE7B /* PayView.swift in Sources */,
 				C09025022A55646100CDDD96 /* Profile.swift in Sources */,
 				C09024FE2A55644A00CDDD96 /* Cart.swift in Sources */,
+				C0F7104B2AA0EB74007719D7 /* MapChoiceView.swift in Sources */,
 				C09024F22A555B6F00CDDD96 /* PopUpview.swift in Sources */,
 				C05EC6AE2A8619CA00189C68 /* CustomTextField.swift in Sources */,
 				C05EC6B02A861C8E00189C68 /* Login.swift in Sources */,
@@ -539,13 +556,16 @@
 				C04AC7172A56B482006E0E59 /* BestMunchCardCell.swift in Sources */,
 				C0A734092A556993009963E7 /* MunchModel.swift in Sources */,
 				C09024F82A55642300CDDD96 /* MainTabView.swift in Sources */,
+				C06827BE2AA07E1100E14DDB /* AppleMapNavigationViewModel.swift in Sources */,
 				C05EC6AC2A86181000189C68 /* Register.swift in Sources */,
 				C09556D72A5C63D60027897A /* CartViewModel.swift in Sources */,
 				C0692B202A83D35A00F764C1 /* EmptyFavouriteView.swift in Sources */,
+				C06827C02AA0899100E14DDB /* Trip.swift in Sources */,
 				C04AC7112A56B007006E0E59 /* MunchHeaderComponent.swift in Sources */,
 				C09024FA2A55643500CDDD96 /* Home.swift in Sources */,
 				C09024F62A55610700CDDD96 /* GuideViewComponent.swift in Sources */,
 				C0692B162A83CFB700F764C1 /* AuthViewModel.swift in Sources */,
+				C02306852AA457AF002A5264 /* WazeNavigationViewModel.swift in Sources */,
 				C04AC7192A56BCA3006E0E59 /* CityPicker.swift in Sources */,
 				C08F27882A91150F007ECE7B /* ProductCell.swift in Sources */,
 				C09024F42A5560EC00CDDD96 /* GuideView.swift in Sources */,

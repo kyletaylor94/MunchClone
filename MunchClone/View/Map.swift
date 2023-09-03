@@ -30,7 +30,7 @@ struct MapView: View {
                         }
                         .sheet(isPresented: $isTapped, content: {
                             MapNavigationView()
-                                .presentationDetents([.height(120), .medium, .large])
+                                .presentationDetents([.height(150), .medium, .large])
                                 .presentationDragIndicator(.automatic)
                         })
                 }
@@ -49,7 +49,6 @@ struct MapView: View {
                     .background(
                         Color.green
                     )
-                    //.frame(height: 44)
                     .clipShape(Circle())
                     .shadow(radius: 10)
                     .padding(.leading)
