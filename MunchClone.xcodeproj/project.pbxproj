@@ -9,13 +9,13 @@
 /* Begin PBXBuildFile section */
 		C018D7462A8C9CFA00D2D706 /* MyFavouriteView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C018D7452A8C9CFA00D2D706 /* MyFavouriteView.swift */; };
 		C02184212A5AB98600F7A40F /* DescriptionViewComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = C02184202A5AB98600F7A40F /* DescriptionViewComponent.swift */; };
-		C02306832AA44E5E002A5264 /* AppleNavigationPolylineView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C02306822AA44E5E002A5264 /* AppleNavigationPolylineView.swift */; };
 		C02306852AA457AF002A5264 /* WazeNavigationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C02306842AA457AF002A5264 /* WazeNavigationViewModel.swift */; };
 		C04AC7112A56B007006E0E59 /* MunchHeaderComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = C04AC7102A56B007006E0E59 /* MunchHeaderComponent.swift */; };
 		C04AC7132A56B102006E0E59 /* MuncheaderScroll.swift in Sources */ = {isa = PBXBuildFile; fileRef = C04AC7122A56B102006E0E59 /* MuncheaderScroll.swift */; };
 		C04AC7152A56B38E006E0E59 /* HomeTitleComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = C04AC7142A56B38E006E0E59 /* HomeTitleComponent.swift */; };
 		C04AC7172A56B482006E0E59 /* BestMunchCardCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C04AC7162A56B482006E0E59 /* BestMunchCardCell.swift */; };
 		C04AC7192A56BCA3006E0E59 /* CityPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = C04AC7182A56BCA3006E0E59 /* CityPicker.swift */; };
+		C04F4B712AA629EB0022E6F3 /* AppleNavigationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C04F4B702AA629EB0022E6F3 /* AppleNavigationView.swift */; };
 		C05EC6AC2A86181000189C68 /* Register.swift in Sources */ = {isa = PBXBuildFile; fileRef = C05EC6AB2A86181000189C68 /* Register.swift */; };
 		C05EC6AE2A8619CA00189C68 /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = C05EC6AD2A8619CA00189C68 /* CustomTextField.swift */; };
 		C05EC6B02A861C8E00189C68 /* Login.swift in Sources */ = {isa = PBXBuildFile; fileRef = C05EC6AF2A861C8E00189C68 /* Login.swift */; };
@@ -106,7 +106,6 @@
 /* Begin PBXFileReference section */
 		C018D7452A8C9CFA00D2D706 /* MyFavouriteView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyFavouriteView.swift; sourceTree = "<group>"; };
 		C02184202A5AB98600F7A40F /* DescriptionViewComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DescriptionViewComponent.swift; sourceTree = "<group>"; };
-		C02306822AA44E5E002A5264 /* AppleNavigationPolylineView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppleNavigationPolylineView.swift; sourceTree = "<group>"; };
 		C02306842AA457AF002A5264 /* WazeNavigationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WazeNavigationViewModel.swift; sourceTree = "<group>"; };
 		C04326062A9DEF0D00B3256C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		C04AC7102A56B007006E0E59 /* MunchHeaderComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MunchHeaderComponent.swift; sourceTree = "<group>"; };
@@ -114,6 +113,7 @@
 		C04AC7142A56B38E006E0E59 /* HomeTitleComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTitleComponent.swift; sourceTree = "<group>"; };
 		C04AC7162A56B482006E0E59 /* BestMunchCardCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BestMunchCardCell.swift; sourceTree = "<group>"; };
 		C04AC7182A56BCA3006E0E59 /* CityPicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CityPicker.swift; sourceTree = "<group>"; };
+		C04F4B702AA629EB0022E6F3 /* AppleNavigationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppleNavigationView.swift; sourceTree = "<group>"; };
 		C05EC6AB2A86181000189C68 /* Register.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Register.swift; sourceTree = "<group>"; };
 		C05EC6AD2A8619CA00189C68 /* CustomTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextField.swift; sourceTree = "<group>"; };
 		C05EC6AF2A861C8E00189C68 /* Login.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Login.swift; sourceTree = "<group>"; };
@@ -259,7 +259,7 @@
 				C0DFCB702A82C2A100BDFA4B /* MapNavigationView.swift */,
 				C0A7340F2A55994E009963E7 /* CustomMappin.swift */,
 				C0F7104A2AA0EB74007719D7 /* MapChoiceView.swift */,
-				C02306822AA44E5E002A5264 /* AppleNavigationPolylineView.swift */,
+				C04F4B702AA629EB0022E6F3 /* AppleNavigationView.swift */,
 			);
 			path = Map;
 			sourceTree = "<group>";
@@ -539,8 +539,8 @@
 				C08F27862A910775007ECE7B /* ApplePayViewModel.swift in Sources */,
 				C0A7340E2A55738C009963E7 /* EmptyCartComponent.swift in Sources */,
 				C04AC7132A56B102006E0E59 /* MuncheaderScroll.swift in Sources */,
-				C02306832AA44E5E002A5264 /* AppleNavigationPolylineView.swift in Sources */,
 				C0A734072A556943009963E7 /* HomeViewComponentCell.swift in Sources */,
+				C04F4B712AA629EB0022E6F3 /* AppleNavigationView.swift in Sources */,
 				C05EC6B22A8760E300189C68 /* CustomBackGroundAnimation.swift in Sources */,
 				C018D7462A8C9CFA00D2D706 /* MyFavouriteView.swift in Sources */,
 				C09024D82A5550FD00CDDD96 /* MunchCloneApp.swift in Sources */,

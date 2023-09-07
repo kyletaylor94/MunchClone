@@ -16,7 +16,7 @@ struct MapView: View {
     
     @State private var region: MKCoordinateRegion = MKCoordinateRegion(center: CLLocationCoordinate2D(latitude: 47.6339, longitude: 19.1076), latitudinalMeters: 10000.0, longitudinalMeters: 10000.0)
     
-    @ObservedObject var viewModel = UserLocation()
+    @ObservedObject var viewModel = LocationManagerService()
     
     
     var body: some View {

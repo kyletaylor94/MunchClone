@@ -7,10 +7,14 @@
 
 import SwiftUI
 import Kingfisher
+import CoreLocation
 
 struct MapNavigationView: View {
     var munch: MunchModel = munchExample[3]
     @State private var isTapped: Bool = false
+    @ObservedObject var viewModel = AppleMapNavigationViewModel()
+    @ObservedObject var userLocation = LocationManagerService()
+    
     
     var body: some View {
         HStack{
@@ -30,7 +34,16 @@ struct MapNavigationView: View {
                     Circle()
                         .foregroundColor(.green)
                         .frame(width: 4)
-                    Text("0.2km")
+                    
+                    Text("\(viewModel.distanceInString) Km")
+                        
+                }
+                HStack{
+                    Circle()
+                        .foregroundColor(.green)
+                        .frame(width: 4)
+                    
+                    Text("Travel time: \n\(viewModel.travelTime)")
                 }
             }
             
@@ -51,6 +64,11 @@ struct MapNavigationView: View {
             
         }
         .padding()
+        .onAppear{
+            guard let userLocation = userLocation.userLocation else { return }
+            viewModel.calculateDistance(from: userLocation, to: munch.location)
+            
+        }
         
         
     }

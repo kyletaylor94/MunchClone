@@ -9,36 +9,64 @@ import Foundation
 import MapKit
 
 class AppleMapNavigationViewModel: ObservableObject{
+    @Published var distance: Double = 0.0
+    @Published var distanceInString: String = ""
+    @Published var travelTime: String = ""
     
-    
-    func appleNavigation(from startingPoint: CLLocationCoordinate2D, to destination: CLLocationCoordinate2D, completion: @escaping(MKRoute) -> Void){
-       
-        let userPlaceMark = MKPlacemark(coordinate: startingPoint)
-        let destinationPlacemark = MKPlacemark(coordinate: destination)
+ 
+    func calculateDistance(from: CLLocationCoordinate2D, to: CLLocationCoordinate2D){
+        let req = MKDirections.Request()
+        req.source = MKMapItem(placemark: MKPlacemark(coordinate: from))
+        req.destination = MKMapItem(placemark: MKPlacemark(coordinate: to))
+        req.transportType = .automobile
+        let directions = MKDirections(request: req)
         
-        let request = MKDirections.Request()
-        
-        request.source = MKMapItem(placemark: userPlaceMark)
-        request.destination = MKMapItem(placemark: destinationPlacemark)
-        
-        let direction = MKDirections(request: request)
-        
-        direction.calculate { response, error in
+        directions.calculate { response, error in
             if let error = error{
-                print("DEBUG: ERROR IN ROUTE CALCULATING: ")
-                print(String(describing: error))
+                print("ERRROR")
                 return
+            } else {
+                guard let unwrappedRoute = response?.routes.first else {
+                    return
+                }
+                let distanceInmeter = unwrappedRoute.distance
+                let expectTime = unwrappedRoute.expectedTravelTime
+                self.distance = distanceInmeter
+                self.routeTimeFormatter(with: expectTime)
+                self.routeDistanceFormatter(with: distanceInmeter)
+               
             }
-            guard let route = response?.routes.first else { return }
-            self.routeTimeFormatter(with: route.expectedTravelTime)
-            completion(route)
         }
     }
     
-    func routeTimeFormatter(with expectedTravelTime: Double){
-        let formatter = DateFormatter()
-        formatter.dateFormat = "hh:mm a"
+    
+    
+    func routeTimeFormatter(with expectedTravelTime: Double) -> String{
+        let formatter = DateComponentsFormatter()
+        formatter.unitsStyle = .abbreviated
+        formatter.allowedUnits = [.hour, .minute]
+        
+        if let formattedTime = formatter.string(from: TimeInterval(expectedTravelTime)){
+            self.travelTime = formattedTime
+            return travelTime
+        } else {
+            return "N/A"
+        }
     }
+    
+    func routeDistanceFormatter(with distance: CLLocationDistance) -> String{
+       let formatter = NumberFormatter()
+        formatter.numberStyle = .decimal
+        formatter.maximumFractionDigits = 2
+        
+        if let formattedDistance = formatter.string(from: CLLocationDistance(distance) as NSNumber){
+            self.distanceInString = formattedDistance
+            return distanceInString
+        } else {
+            return "N/A"
+        }
+    }
+    
 
     
 }

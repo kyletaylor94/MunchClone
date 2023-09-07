@@ -11,7 +11,7 @@ import CoreLocationUI
 import SwiftUI
  
 
-class UserLocation: NSObject,ObservableObject, CLLocationManagerDelegate{
+class LocationManagerService: NSObject,ObservableObject, CLLocationManagerDelegate{
     let manager = CLLocationManager()
     
     @Published var userLocation: CLLocationCoordinate2D?
@@ -39,14 +39,14 @@ class UserLocation: NSObject,ObservableObject, CLLocationManagerDelegate{
         
         
         if locations.first != nil {
-            print("location :: \(userLocation)")
+            //print("location :: \(userLocation)")
         }
     }
     
   
 }
 
-extension UserLocation{
+extension LocationManagerService{
     func locationManager(_ manager: CLLocationManager, didFailWithError error: Error) {
             print("error:: \(error.localizedDescription)")
             print(String(describing: error))
