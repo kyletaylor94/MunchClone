@@ -18,10 +18,8 @@ class WazeNavigationViewModel: ObservableObject{
                let longitude = destination.longitude
                let wazeURL = URL(string: "waze://?ll=\(latitude),\(longitude)&navigate=yes")!
                
-               // Megnyitjuk a Waze alkalmazást a megadott célponttal
                UIApplication.shared.open(wazeURL, options: [:], completionHandler: nil)
            } else {
-               // Ha a Waze nincs telepítve, itt kezelhetjük ezt az esetet
                print("A Waze alkalmazás nincs telepítve.")
            }
        }
